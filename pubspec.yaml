@@ -1,0 +1,42 @@
+name: automasi_dokumen
+description: Aplikasi automasi pembuatan surat jalan, deklarasi, dan surat lainnya dengan fitur tanda tangan digital dan export PDF.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  provider: ^6.0.0
+  intl: ^0.19.0
+  pdf: ^3.10.0
+  printing: ^5.11.0
+  signature: ^4.4.0
+  image_picker: ^1.0.0
+  path_provider: ^2.1.0
+  sqflite: ^2.3.0
+  http: ^1.1.0
+  get_it: ^7.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/logos/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
